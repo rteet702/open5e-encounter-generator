@@ -43,7 +43,7 @@ const Index: NextPage = () => {
                     <h2 className="text-4xl">A Little about Us</h2>
                     <p className="text-2xl">
                         The goal of this app is to take the headache off of
-                        Dungeon Master's <span className="font-bold">(DM)</span>{" "}
+                        Dungeon Masters <span className="font-bold">(DM)</span>{" "}
                         shoulders when it comes to making encounters for their
                         players.
                     </p>
