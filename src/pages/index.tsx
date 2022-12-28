@@ -48,7 +48,7 @@ const Index: NextPage = () => {
                         players.
                     </p>
                     <p className="text-2xl">
-                        With this app, you'll be able to enter your players
+                        With this app, youll be able to enter your players
                         levels, add various modifiers, pick themes, and more to
                         completely customize your encounters.
                     </p>
