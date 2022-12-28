@@ -3,10 +3,13 @@ import Button from "../components/StyledButton";
 import StyledCard from "../components/StyledCard";
 import { Teko } from "@next/font/google";
 import { NextPage } from "next";
+import { useRouter } from "next/router";
 
 const font = Teko({ subsets: ["latin"], weight: "300" });
 
 const Index: NextPage = () => {
+    const router = useRouter();
+
     return (
         <>
             <Head>
@@ -40,8 +43,9 @@ const Index: NextPage = () => {
                     <h2 className="text-4xl">A Little about Us</h2>
                     <p className="text-2xl">
                         The goal of this app is to take the headache off of
-                        Dungeon Master's (DM) shoulders when it comes to making
-                        encounters for their players.
+                        Dungeon Master's <span className="font-bold">(DM)</span>{" "}
+                        shoulders when it comes to making encounters for their
+                        players.
                     </p>
                     <p className="text-2xl">
                         With this app, you'll be able to enter your players
@@ -55,8 +59,9 @@ const Index: NextPage = () => {
                 </StyledCard>
                 <StyledCard>
                     <h2 className="text-4xl">Ready to get started?</h2>
-                    <Button>Log In!</Button>
-                    <Button>Register!</Button>
+                    <Button onClick={() => router.push("/test")}>
+                        Log In!
+                    </Button>
                 </StyledCard>
             </main>
         </>
