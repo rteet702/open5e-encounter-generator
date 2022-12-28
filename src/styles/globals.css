@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gradient-to-bl from-yellow-200 via-yellow-400 to-yellow-700 h-screen bg-fixed;
+}
